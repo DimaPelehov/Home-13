@@ -1,0 +1,89 @@
+body {
+  font-family: "Nunito";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+header .top-navbar {
+  width: 375px;
+  height: 55px;
+  background-color: #0C4B35;
+  color: white;
+}
+header .top-navbar .text {
+  width: 335px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px 15px;
+  gap: 183px;
+}
+header .top-navbar .text .adress-phone {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 20px;
+  gap: 20px;
+}
+header .top-navbar .text .language {
+  width: 52px;
+  height: 16px;
+  line-height: 16.7px;
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+}
+header .top-navbar .text .language a {
+  text-decoration: none;
+  color: white;
+}
+header .navbar {
+  width: 375px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar .navbar-text {
+  width: 345px;
+  height: 40px;
+  gap: 145px;
+  display: flex;
+}
+header .navbar .navbar-text .logo {
+  width: 90px;
+  height: 40px;
+}
+header .navbar .navbar-text .logo a {
+  display: block;
+  height: 40px;
+}
+header .navbar .navbar-text .call-and-menu {
+  gap: 40px;
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+header .navbar .navbar-text .call-and-menu .callbutton {
+  width: 40px;
+  height: 34px;
+}
+header .navbar .navbar-text .call-and-menu .menu {
+  height: 34px;
+}
+
+@media (min-width: 1410px) {
+  .top-navbar {
+    width: 1410px;
+    height: 59px;
+  }
+  .top-navbar .text {
+    padding: 17px 251px;
+  }
+}/*# sourceMappingURL=style.css.map */
