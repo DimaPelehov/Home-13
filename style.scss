@@ -1,118 +1,223 @@
-
-body{
-    font-family: "Nunito";
+body {
+  font-family: "Nunito";
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
 
-    .top-navbar{
-        width: 375px;
-        height: 55px;
-        background-color: #0C4B35;
-        color: white;
-        
-                   
+  .top-navbar {
+    width: 375px;
+    height: 55px;
+    background-color: #0c4b35;
+    color: white;
 
-       
-        .text{
-            width: 335px;
-            height: 20px;
-            display: flex;
-            flex-direction: row;
-            padding:  20px 20px 15px;
-            gap: 183px;
-            
-            
-            .adress-phone{
-                display: flex;
-                flex-direction: row;
-                width: 100px;
-                height: 20px;
-                gap:20px;
+    .text {
+      width: 335px;
+      height: 20px;
+      display: flex;
+      flex-direction: row;
+      padding: 20px 20px 15px;
+      gap: 183px;
 
-            }
+      .adress-phone {
+        display: flex;
+        width: 100px;
+        height: 20px;
+        gap: 20px;
 
-            .language{
-                width: 52px;
-                height: 16px;
-                line-height: 16.7px;
-                font-size: 12px;
-                display: flex;
-                gap: 5px;
-                
-                a{
-                    text-decoration: none;
-                    color: white;
-                }          
-            
-            }
-
+        .e-mail {
+          display: none;
         }
 
-    }
+        .phone-number {
+          display: none;
+        }
 
-    .navbar{
-        width: 375px;
-        height: 70px;
+        .location-text {
+          display: none;
+        }
+      }
+
+      .language {
+        width: 52px;
+        height: 16px;
+        font-size: 12px;
+        display: flex;
+        gap: 5px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    width: 375px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navbar-text {
+      width: 345px;
+      height: 40px;
+      gap: 145px;
+      display: flex;
+
+      .logo {
+        width: 90px;
+        height: 40px;
+
+        a {
+          display: block;
+          height: 40px;
+        }
+      }
+
+      .call-and-menu {
+        gap: 40px;
+        width: 110px;
+        height: 40px;
         display: flex;
         align-items: center;
-        justify-content: center;
-       
 
-        .navbar-text{
-            width: 345px;
-            height: 40px;
-            gap: 145px;
-            display: flex;
-           
-            
-            .logo{
-                width: 90px;
-                height: 40px;
-
-                a{
-                    display: block;
-                    height: 40px;
-                }
-            }
-            
-            .call-and-menu{
-                gap: 40px;
-                width: 110px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-
-                .callbutton{
-                    width: 40px;
-                    height: 34px;
-                }
-
-                .menu{
-                    height: 34px;
-                }
-
-            }
+        .callbutton {
+          width: 40px;
+          height: 34px;
         }
-    }
 
-    
+        .menu {
+          height: 34px;
+        }
+      }
+
+      .frame {
+        display: none;
+      }
+    }
+  }
 }
 
+// laptop
+@media (min-width: 1410px) {
+  header {
+    // width: 1920px;
+    // position: relative;
+    // margin: auto;
+    // right: 0;
+    // left: 0;
 
-// desktop
-@media(min-width:1410px){
-.top-navbar{
-    width: 1410px;
-    height: 59px;
+    .top-navbar {
+      width: 1920px;
+      height: 59px;
+      font-family: "Poppins";
+      font-size: 14px;
 
-    .text{
-        padding: 17px 251px;;
+      .text {
+        width: 1418px;
+        height: 25px;
+        padding: 17px 251px;
+        gap: 613px;
+
+        .adress-phone {
+          width: 739px;
+          height: 25px;
+          gap: 30px;
+
+          a {
+            margin-right: 10px;
+          }
+
+          .mail {
+            display: flex;
+
+            .e-mail {
+              display: flex;
+            }
+          }
+
+          .phone {
+            display: flex;
+
+            .phone-number {
+              display: flex;
+            }
+          }
+
+          .location {
+            display: flex;
+
+            .location-text {
+              display: flex;
+            }
+          }
+        }
+
+        .language {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
     }
-}
+
+    .navbar {
+      width: 1920px;
+      height: 85px;
+
+      .navbar-text {
+        padding: 15px 256px;
+        width: 1408px;
+        height: 55px;
+        align-items: center;
+        gap: 430px;
+
+        .call-and-menu {
+          display: none;
+        }
+
+        .frame {
+          display: flex;
+          gap: 101px;
+          width: 898px;
+          height: 50px;
+
+          .frame-menu {
+            gap: 44px;
+            display: flex;
+            align-items: center;
+
+            a {
+              text-decoration: none;
+              font-size: 16px;
+              color: black;
+
+              &:hover {
+                color: #00730c;
+              }
+            }
+
+            .frame-menu-item {
+              display: flex;
+              gap: 5px;
+            }
+          }
+
+          .frame-callbutton {
+            width: 170px;
+
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }

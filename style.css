@@ -12,7 +12,7 @@ header {
 header .top-navbar {
   width: 375px;
   height: 55px;
-  background-color: #0C4B35;
+  background-color: #0c4b35;
   color: white;
 }
 header .top-navbar .text {
@@ -25,15 +25,22 @@ header .top-navbar .text {
 }
 header .top-navbar .text .adress-phone {
   display: flex;
-  flex-direction: row;
   width: 100px;
   height: 20px;
   gap: 20px;
 }
+header .top-navbar .text .adress-phone .e-mail {
+  display: none;
+}
+header .top-navbar .text .adress-phone .phone-number {
+  display: none;
+}
+header .top-navbar .text .adress-phone .location-text {
+  display: none;
+}
 header .top-navbar .text .language {
   width: 52px;
   height: 16px;
-  line-height: 16.7px;
   font-size: 12px;
   display: flex;
   gap: 5px;
@@ -77,13 +84,93 @@ header .navbar .navbar-text .call-and-menu .callbutton {
 header .navbar .navbar-text .call-and-menu .menu {
   height: 34px;
 }
+header .navbar .navbar-text .frame {
+  display: none;
+}
 
 @media (min-width: 1410px) {
-  .top-navbar {
-    width: 1410px;
+  header .top-navbar {
+    width: 1920px;
     height: 59px;
+    font-family: "Poppins";
+    font-size: 14px;
   }
-  .top-navbar .text {
+  header .top-navbar .text {
+    width: 1418px;
+    height: 25px;
     padding: 17px 251px;
+    gap: 613px;
+  }
+  header .top-navbar .text .adress-phone {
+    width: 739px;
+    height: 25px;
+    gap: 30px;
+  }
+  header .top-navbar .text .adress-phone a {
+    margin-right: 10px;
+  }
+  header .top-navbar .text .adress-phone .mail {
+    display: flex;
+  }
+  header .top-navbar .text .adress-phone .mail .e-mail {
+    display: flex;
+  }
+  header .top-navbar .text .adress-phone .phone {
+    display: flex;
+  }
+  header .top-navbar .text .adress-phone .phone .phone-number {
+    display: flex;
+  }
+  header .top-navbar .text .adress-phone .location {
+    display: flex;
+  }
+  header .top-navbar .text .adress-phone .location .location-text {
+    display: flex;
+  }
+  header .top-navbar .text .language a {
+    font-size: 14px;
+  }
+  header .navbar {
+    width: 1920px;
+    height: 85px;
+  }
+  header .navbar .navbar-text {
+    padding: 15px 256px;
+    width: 1408px;
+    height: 55px;
+    align-items: center;
+    gap: 430px;
+  }
+  header .navbar .navbar-text .call-and-menu {
+    display: none;
+  }
+  header .navbar .navbar-text .frame {
+    display: flex;
+    gap: 101px;
+    width: 898px;
+    height: 50px;
+  }
+  header .navbar .navbar-text .frame .frame-menu {
+    gap: 44px;
+    display: flex;
+    align-items: center;
+  }
+  header .navbar .navbar-text .frame .frame-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+  header .navbar .navbar-text .frame .frame-menu a:hover {
+    color: #00730c;
+  }
+  header .navbar .navbar-text .frame .frame-menu .frame-menu-item {
+    display: flex;
+    gap: 5px;
+  }
+  header .navbar .navbar-text .frame .frame-callbutton {
+    width: 170px;
+  }
+  header .navbar .navbar-text .frame .frame-callbutton a {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
