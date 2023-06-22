@@ -8,6 +8,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
 
   .top-navbar {
     width: 375px;
@@ -108,10 +112,6 @@ header {
 @media (min-width: 1410px) {
   header {
     // width: 1920px;
-    // position: relative;
-    // margin: auto;
-    // right: 0;
-    // left: 0;
 
     .top-navbar {
       width: 1920px;
